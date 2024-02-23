@@ -22,11 +22,14 @@ class Player {
     this.width = 40;
     this.height = 40;
   }
-  
-
   draw() {
     ctx.fillStyle = "#99c9ff";
+    ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+  }
+  
 
+  update() {
+    this.draw();
   }
 
 
